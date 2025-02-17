@@ -408,3 +408,7 @@ h3 {
     transform: scale(1.1); /* Agrandit légèrement le logo */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
 }
+#itemag{
+     position: relative!important;
+  left: 3rem!important;
+}
