@@ -295,3 +295,116 @@ background-color: #c3ddfa;
         font-size: 0.9rem;
     }
 }
+/* Conteneur principal */
+.horizontal-section {
+    width: 100%;
+    overflow-x: auto; /* Permet le défilement horizontal */
+    white-space: nowrap; /* Empêche le retour à la ligne */
+    background: linear-gradient(135deg, #1e1e2f, #2a2a40); /* Fond moderne */
+    padding: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenu horizontal */
+.horizontal-content {
+    display: inline-flex; /* Affiche les cartes en ligne */
+    gap: 20px; /* Espace entre les cartes */
+    padding: 0 20px;
+}
+
+/* Style des cartes */
+.horizontal-section .card {
+    display: inline-block;
+    width: 300px; /* Largeur fixe pour chaque carte */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.horizontal-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Titres et texte */
+.horizontal-section h3, .horizontal-section h4 {
+    margin: 0 0 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.horizontal-section h4 {
+    font-size: 1.4rem;
+}
+
+.horizontal-section .subtitle {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.horizontal-section p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ddd;
+    white-space: normal; /* Permet le retour à la ligne dans les paragraphes */
+}
+
+.horizontal-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.horizontal-section ul li {
+    font-size: 0.9rem;
+    color: #ddd;
+    margin-bottom: 8px;
+}
+
+/* Barre de défilement personnalisée (optionnel) */
+.horizontal-section::-webkit-scrollbar {
+    height: 8px;
+}
+
+.horizontal-section::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.horizontal-section::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.horizontal-section::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+/* Conteneur du logo */
+.logo-container {
+    text-align: center; /* Centre le logo */
+    margin-bottom: 20px; /* Espace entre le logo et le titre */
+}
+
+/* Style du logo */
+.logo {
+    width: 80px; /* Taille du logo */
+    height: auto; /* Conserve les proportions */
+    border-radius: 50%; /* Rend le logo rond (optionnel) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet moderne */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol du logo */
+.logo:hover {
+    transform: scale(1.1); /* Agrandit légèrement le logo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
+}
