@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    background: url('/Gimg/headder.webp') no-repeat center center/cover;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+  
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slide-in {
+    animation: slideIn 1s ease-out;
+}
+/* Transport Personnel Section */
+#personal-transport {
+    background-color: #f8f9fa;
+}
+
+#personal-transport h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#personal-transport p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+/* Agence de Voyage Section */
+#travel-agency {
+    background-color: #ffffff;
+}
+
+#travel-agency h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.custom-blue-bg {
+    background-color: #2616b9d0; 
+}
+#navbarNavli{
+    color: black!important;
+    font-weight: bold;
+}
+#travel-agency p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.advantages .advantage-item {
+    font-size: 1rem;
+    color: #333;
+}
+
+.advantages .advantage-item i {
+    font-size: 1.5rem;
+}
+.btn{
+    background-color: rgb(111, 111, 221)!important;
+    color: white!important;
+    font-size: 1.5rem;
+    border: none;
+    transition: cubic-bezier(1, 0, 0, 1)ease-in-out;
+}
+.btn:hover{
+    color: rgb(111, 111, 221)!important;
+    background-color:white!important;
+    font-size: 1.8rem;
+   
+}
+
+.navbar-brand.active {
+    color: rgb(26, 25, 25);
+    font-weight: bold;
+}
+
+.hero-section {
+    position: relative;
+    background: url('/Gimg/hero.webp') no-repeat center center/cover;
+    width: 100%;
+    min-height: 93vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Effet sombre fluide */
+}
+.container {
+    position: relative;
+    z-index: 1;
+}
+#services{
+    background-color: #7fa0c7!important;
+
+}
+#travel-agency{
+    background-color: #a8c7eb!important;
+}
+#video{
+    background-color: #c3ddfa!important;
+}
+
+#imghead{
+    height: 800px; /* Définir une hauteur fixe pour les images */
+    object-fit: cover
+}
+#TP{
+    border-radius: 50px;
+}
+.card-img-top {
+    height: 400px; /* Définir une hauteur fixe pour les images */
+    object-fit: cover; /* Assurer que les images couvrent bien l'espace */
+}
+.card-img-container {
+    height: 200px; /* Hauteur fixe pour le conteneur de l'image */
+    overflow: hidden; /* Masquer les parties de l'image qui dépassent */
+}
+
+.card-img-container img {
+    width: 100%; /* Largeur de l'image à 100% du conteneur */
+    height: 100%; /* Hauteur de l'image à 100% du conteneur */
+    object-fit: cover; /* Ajuster l'image sans la déformer */
+}
+#t{
+    width: 150%; /* Largeur de l'image à 100% du conteneur */
+    height: 100%; /* Hauteur de l'image à 100% du conteneur */
+    object-fit: cover;
+border-radius: 20px;
+}
+#ptext{
+    position: relative!important;
+    top: 8rem;
+    left: 12rem;
+    font-size: 1.4rem!important;
+}
+#trip{
+    border-radius: 20px!important;
+}
+#g-about{
+    border-radius: 20px!important;
+}
+#paid{
+background-color: #c3ddfa;
+}
+#profiles{
+    background-color: #becbda!important;
+}
+#c-body{
+    background-color: white!important;
+    border-radius: 20px!important;
+}
+.instagram-link {
+    background-color: #343a40;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.instagram-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+.instagram-link a:hover {
+    color: #e4405f; /* Couleur Instagram au survol */
+}
+.social-links {
+    background-color: #343a40;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+.social-links a:hover {
+    color: #007bff; /* Couleur au survol */
+}
+#contact {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+#contact h2 {
+    color: #343a40;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+#contact .form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 12px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+#contact .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+#contact .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+#contact .btn-primary:hover {
+    background-color: #0056b3;
+}
+#contact .list-unstyled {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#contact .list-unstyled li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #495057;
+}
+#contact .list-unstyled strong {
+    color: #343a40;
+    font-weight: 600;
+}
+/* style.css */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .hero-section p {
+        font-size: 1rem;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 80px;
+        height: 50px;
+    }
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+    .hero-section p {
+        font-size: 0.9rem;
+    }
+}
