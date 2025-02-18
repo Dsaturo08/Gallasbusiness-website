@@ -3,7 +3,7 @@ body {
 }
 
 .hero-section {
-    background: url('Gimg/headder.webp') no-repeat center center/cover;
+    background: url('/Gimg/headder.webp') no-repeat center center/cover;
     color: white;
     padding: 150px 0;
     text-align: center;
@@ -101,17 +101,7 @@ section {
     font-size: 1.8rem;
    
 }
-.btn-001{
-     background-color: rgb(111, 111, 221)!important;
-    color: white!important;
-    font-size: 1.5rem;
-    border: none;
-    transition: cubic-bezier(1, 0, 0, 1)ease-in-out;
-}
-.btn-001:hover{
-    color: rgb(111, 111, 221)!important;
-    background-color:white!important;
-    font-size: 1.8rem;
+
 .navbar-brand.active {
     color: rgb(26, 25, 25);
     font-weight: bold;
@@ -305,6 +295,31 @@ background-color: #c3ddfa;
         font-size: 0.9rem;
     }
 }
+#itemag{
+    position: relative!important;
+    left: -13rem!important;
+}
+#trip{
+    width: 70%;
+}
+#itemag a {
+    text-decoration: none;
+    background-color: rgb(111, 111, 221)!important;
+    color: white!important;
+    font-size: 1.5rem;
+    border: none;
+    transition: cubic-bezier(1, 0, 0, 1)ease-in-out;
+    padding: 7px 10px ;
+    border-radius: 10px;
+}
+
+
+#itemag a:hover{
+color: rgb(111, 111, 221)!important;
+background-color:white!important;
+font-size: 1.8rem;
+
+}
 /* Conteneur principal */
 .horizontal-section {
     width: 100%;
@@ -348,7 +363,7 @@ background-color: #c3ddfa;
     color: #fff;
 }
 
-h3 {
+.horizontal-section h3 {
     font-size: 1.8rem;
 }
 
@@ -403,10 +418,14 @@ h3 {
     text-align: center; /* Centre le logo */
     margin-bottom: 20px; /* Espace entre le logo et le titre */
 }
+.logo {
+    filter: brightness(50%);
+}
+
 
 /* Style du logo */
 .logo {
-    width: 80px; /* Taille du logo */
+    width: 100%; /* Taille du logo */
     height: auto; /* Conserve les proportions */
     border-radius: 50%; /* Rend le logo rond (optionnel) */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet moderne */
@@ -417,8 +436,4 @@ h3 {
 .logo:hover {
     transform: scale(1.1); /* Agrandit légèrement le logo */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
-}
-#itemag{
-     position: relative!important;
-  left: 3rem!important;
 }
