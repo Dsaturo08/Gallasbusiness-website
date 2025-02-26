@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erreur Fatale</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 24px;
+            text-align: center;
+            padding-top: 20%;
+            overflow: hidden;
+        }
+
+        .glitch {
+            position: relative;
+            display: inline-block;
+            animation: glitch-animation 1s infinite;
+        }
+
+        @keyframes glitch-animation {
+            0% { transform: translate(0, 0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(2px, -2px); }
+            60% { transform: translate(-2px, -2px); }
+            80% { transform: translate(2px, 2px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        .error {
+            color: white;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="glitch">ERREUR FATALE: SYSTÈME COMPROMIS</div>
+    <div class="error" id="error-message"></div>
+
+    <script>
+        const errors = [
+            "404 : Âme non trouvée...",
+            "Erreur critique : Présence détectée...",
+            "Données corrompues : Votre existence est un bug...",
+            "Connexion forcée... Accès refusé...",
+            "Processus en cours... Vous ne pouvez pas fuir..."
+        ];
+
+        function showRandomError() {
+            const errorDiv = document.getElementById("error-message");
+            errorDiv.innerText = errors[Math.floor(Math.random() * errors.length)];
+        }
+
+        setInterval(showRandomError, 2000);
+    </script>
+</body>
+</html>
 
